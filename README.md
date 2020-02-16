@@ -4,7 +4,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-brightgreen.svg)](./LICENSE)
 
-Project Matching is an open source project that helps teams/clubs help match their members to projects. The application allows the admin to rank people's skills based on projects and then the team members rank projects, then the application matches people to projects based on the stable match algorithm. 
+Project Matching is an open source project that helps teams/clubs help match their members to projects. The application allows the admin to rank people's skills based on projects and then the team members rank projects, then the application matches people to projects based on the [stable match algorithm](https://en.wikipedia.org/wiki/Stable_marriage_problem). 
 
 ## Getting Started
 
