@@ -1,8 +1,9 @@
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-brightgreen.svg)](./LICENSE)
+
 # project-matching
 
 <!-- [![Build Status](https://travis-ci.org/abhinavtripathy/XAuth.svg?branch=master)](https://travis-ci.org/abhinavtripathy/XAuth) -->
-
-[![License](https://img.shields.io/badge/License-Apache%202.0-brightgreen.svg)](./LICENSE)
 
 <div><p align="center">
 <center><h4>project-matching is supported & used by:</h4><a href="https://www.linkedin.com/company/dscntu/"><img width="300" src="assets/dsc_ntu.png" target="_blank"></a>
