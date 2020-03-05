@@ -5,8 +5,9 @@
 <!-- [![Build Status](https://travis-ci.org/abhinavtripathy/XAuth.svg?branch=master)](https://travis-ci.org/abhinavtripathy/XAuth) -->
 
 <div><p align="center">
-<center><h4>project-matching is supported & used by:</h4><a href="https://www.linkedin.com/company/dscntu/"><img width="300" src="assets/dsc_ntu.png" target="_blank"></a>
-<a href="https://umassdsc.com/" target="_blank"><img width="300" src="assets/dsc_umass.jpg"></a>
+<center><h4>project-matching is supported & used by:</h4><a href="https://www.linkedin.com/company/dscntu/"><img width="270" src="assets/dsc_ntu.png" target="_blank"></a>
+<a href="https://umassdsc.com/" target="_blank"><img width="270" src="assets/dsc_umass.jpg"></a>
+<a href="http://www.dsc-rpi.club/" target="_blank"><img width="270" src="assets/dsc_rpi.png"></a>
 </center></p></div>
 
 Project Matching is an open source project that helps teams/clubs help match their members to projects. The application allows the admin to rank people's skills based on projects and then the team members rank projects, then the application matches people to projects based on the [stable match algorithm](https://en.wikipedia.org/wiki/Stable_marriage_problem). 
