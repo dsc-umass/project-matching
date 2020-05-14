@@ -16,15 +16,15 @@ Project Matching is an open source project that helps teams/clubs help match the
 
 ### Prerequisites
 
-Since this is a react application NPM & NodeJS are prerequisites. 
-
+Since this is a Rails Application it requires Ruby. 
+<!-- 
 ### Installing
 
 ```
 yarn install
 
 yarn start
-```
+``` -->
 <!-- 
 ## Deployment
 
