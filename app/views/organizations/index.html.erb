@@ -1,0 +1,16 @@
+<h1>Find your Organization</h1>
+<h5>
+<%= link_to 'Create Organization', new_organization_path %>
+</h5>
+
+<h4>Current Organizations</h4>
+
+<br><br><br>
+
+<% @organization.each do |organization| %>
+    <%= organization.name %>
+    <%= link_to 'Show', organization_path(organization) %>
+<%end%>
+<footer>
+    <%= link_to 'Home', 'homepage/index' %>
+</footer>
