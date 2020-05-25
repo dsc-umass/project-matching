@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+	<strong>Name:</strong>
+	<%= @organization.name %>
+</p>
+
+<p>
+	<strong>Description:</strong>
+	<%= @organization.description %>
+</p>
+
+<p>
+	<strong>Size:</strong>
+	<%= @organization.size %>
+</p>
+
+<p>
+	<strong>Members:</strong>
+	<%= @organization.members %>
+</p>
+
+<%= link_to 'Edit', edit_organization_path(@organization) %> |
+<%= link_to 'Back', organizations_path %>
+
+<br><br><br><br><br>
+<footer>
+	<%= button_to 'Destroy', organization_path(@organization), method: :delete, data: { confirm: 'Are you sure?' } %>
+</footer>
