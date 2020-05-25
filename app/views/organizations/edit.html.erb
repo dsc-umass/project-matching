@@ -1,3 +1,6 @@
-<h1>Edit Organization Details</h1>
-<%= render 'form' %>
+<h1>Editing Organization</h1>
+
+<%= render 'form', organization: @organization %>
+
+<%= link_to 'Show', @organization %> |
 <%= link_to 'Back', organizations_path %>

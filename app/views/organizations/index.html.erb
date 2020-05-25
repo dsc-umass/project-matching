@@ -1,16 +1,32 @@
-<h1>Find your Organization</h1>
-<h5>
-<%= link_to 'Create Organization', new_organization_path %>
-</h5>
+<p id="notice"><%= notice %></p>
 
-<h4>Current Organizations</h4>
+<h1>Organizations</h1>
 
-<br><br><br>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Size</th>
+      <th>Members</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
 
-<% @organization.each do |organization| %>
-    <%= organization.name %>
-    <%= link_to 'Show', organization_path(organization) %>
-<%end%>
-<footer>
-    <%= link_to 'Home', 'homepage/index' %>
-</footer>
+  <tbody>
+    <% @organizations.each do |organization| %>
+      <tr>
+        <td><%= organization.name %></td>
+        <td><%= organization.description %></td>
+        <td><%= organization.size %></td>
+        <td><%= organization.members %></td>
+        <td><%= link_to 'Show', organization %></td>
+        <td><%= link_to 'Edit', edit_organization_path(organization) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Organization', new_organization_path %>
