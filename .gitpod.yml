@@ -8,5 +8,5 @@ ports:
   - port: 3000
     onOpen: open-preview
 tasks:
-  - init: bundle install && yarn install --check-files
+  - init: rvm install 2.7 && bundle install && yarn install --check-files
     command: rails server
