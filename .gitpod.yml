@@ -1,6 +1,12 @@
-image:
-    file: .gitpod.Dockerfile
+# image:
+#     file: .gitpod.Dockerfile
   
-  tasks:
-    - init: yarn install && bundle install
-  
+#   tasks:
+#     - init: yarn install && bundle install
+
+ports:
+  - port: 3000
+    onOpen: open-preview
+tasks:
+  - init: bundle install && yarn install --check-files
+    command: rails server
