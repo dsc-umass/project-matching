@@ -3,6 +3,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.0'
 
+#auth
+gem 'devise'
+gem 'jquery-turbolinks'
+
 # Bcrypt for hashing passwords
 gem 'bcrypt', '3.1.13'
 # Bootstrap with sass

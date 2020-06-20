@@ -62,4 +62,9 @@ Rails.application.configure do
   
   # Allow connections to local server.
   config.hosts.clear
+  
+  #Generate links inside the e-mail views
+  host = 'fba683997f6b423bbad6dae575c89dc0.vfs.cloud9.ap-southeast-1.amazonaws.com'
+  config.action_mailer.default_url_options = { host: host, protocol: 'https' }
+  config.action_mailer.perform_deliveries = true
 end
