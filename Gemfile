@@ -7,6 +7,9 @@ ruby '2.7.0'
 gem 'devise'
 gem 'jquery-turbolinks'
 
+# tags
+gem 'acts-as-taggable-on', '~> 6.0'
+
 # Bcrypt for hashing passwords
 gem 'bcrypt', '3.1.13'
 # Bootstrap with sass
