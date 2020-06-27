@@ -38,11 +38,11 @@ class OrganizationsControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to organization_url(@organization)
   end
 
-  test "should destroy organization" do
-    assert_difference('Organization.count', -1) do
-      delete organization_url(@organization)
-    end
+  # test "should destroy organization" do
+  #   assert_difference('Organization.count', -1) do
+  #     delete organization_url(@organization)
+  #   end
 
-    assert_redirected_to organizations_url
-  end
+  #   assert_redirected_to organizations_url
+  # end
 end
