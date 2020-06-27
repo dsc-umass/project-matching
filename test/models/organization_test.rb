@@ -1,7 +1,10 @@
 require 'test_helper'
 
 class OrganizationTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  
+  context 'associations' do
+    should have_many(:projects)
+    # should have_and_belong_to_many(:users)
+  end
+  
 end
