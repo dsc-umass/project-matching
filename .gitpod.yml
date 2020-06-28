@@ -9,7 +9,7 @@ image:
         rvm autolibs disable &&
         rvm install 2.7.0 &&
         gem install bundler &&
-        cp config/database.example.yml config/database.yml &&
+        cp config/database.yml config/database.yml &&
         createuser -s postgres &&
         (redis-server &) &&
         bundle install --without production --path vendor/bundle &&
