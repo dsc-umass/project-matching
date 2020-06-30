@@ -62,7 +62,7 @@ Then type:
 psql project_matching_development projectmatch projectmatchpass
 ```
 
-### Common Errors
+### Common Errors & FAQ
 
 In case of a database not found or database not created error:
 
@@ -73,6 +73,14 @@ cd docker
 
 bash db_setup.sh
 ```
+
+If you want to reset the container and want to rebuild it, run:
+
+```
+sudo docker-compose down
+```
+
+and then rebuild it with docker-compose build
 
 <!-- 
 ### Installing
