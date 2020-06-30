@@ -17,7 +17,33 @@ Project Matching is an open source project that helps teams/clubs help match the
 
 ### Prerequisites
 
-Since this is a Rails Application it requires Ruby. 
+Since the applciation has been containerized through docker-compose, you would need docker-compose.
+
+### Installing & Running the Container
+
+To build the container(this is a one time build):
+
+```
+sudo docker-compose build
+```
+
+To run the container (everytime you want to start the application):
+
+```
+sudo docker-compose up
+```
+
+You can press ctrl/command + C on the terminal to stop the container.
+
+### Accessing the Rails Container
+
+To access the Rails Container:
+
+```
+sudo bash docker_shell.sh
+```
+
+To access the Postgres Container
 <!-- 
 ### Installing
 
