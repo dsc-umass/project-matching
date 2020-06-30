@@ -19,7 +19,7 @@ Project Matching is an open source project that helps teams/clubs help match the
 
 Since the applciation has been containerized through docker-compose, you would need docker-compose.
 
-### Installing & Running the Container
+### Installing & Running the Containers
 
 To build the container(this is a one time build):
 
@@ -37,7 +37,7 @@ You can press ctrl/command + C on the terminal to stop the container.
 
 ### Accessing the Rails Container
 
-To access the Rails Container:
+To access the Rails Container(make sure the containers are already running):
 
 ```
 sudo bash docker_shell.sh
@@ -50,7 +50,7 @@ rails c
 
 ### Accessing the Postgres Container
 
-To access the Postgres Container:
+To access the Postgres Container(make sure the containers are already running):
 
 ```
 sudo bash db_shell.sh
