@@ -10,5 +10,10 @@
   <%= @organization.email %>
 </p>
 
+<p>
+<strong>Tags:</strong>
+<%= render @organization.types %>
+</p>
+
 <%= link_to 'Edit', edit_organization_path(@organization) %> |
 <%= link_to 'Back', organizations_path %>
