@@ -22,11 +22,6 @@ RUN yarn install
 # Installs gems listed in the Gemfile.lock & Package.json
 RUN bundle install
 
-# Database Setup
-RUN bundle exec rake db:create 
-RUN bundle exec rake db:migrate 
-RUN bundle exec rake db:setup
-
 # Exposes the 3000 port to access it outside of the image
 EXPOSE 3000
 
