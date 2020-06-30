@@ -26,4 +26,4 @@ RUN bundle install
 EXPOSE 3000
 
 # Default command that runs when the container starts
-CMD ["bundle exec rails server -b 0.0.0.0"]
+CMD ["bash", "docker/docker_set_up.sh"]
