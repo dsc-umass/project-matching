@@ -42,8 +42,38 @@ To access the Rails Container:
 ```
 sudo bash docker_shell.sh
 ```
+If you want to access the rails console, then run the following comand after the previous one:
 
-To access the Postgres Container
+```
+rails c
+```
+
+### Accessing the Postgres Container
+
+To access the Postgres Container:
+
+```
+sudo bash db_shell.sh
+```
+
+Then type:
+
+```
+psql project_matching_development projectmatch projectmatchpass
+```
+
+### Common Errors
+
+In case of a database not found or database not created error:
+
+Access the Rails Container and run:
+
+```
+cd docker
+
+bash db_setup.sh
+```
+
 <!-- 
 ### Installing
 
