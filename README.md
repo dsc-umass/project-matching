@@ -42,7 +42,7 @@ To access the Rails Container:
 ```
 sudo bash docker_shell.sh
 ```
-If you want to access the rails console, then run the following comand after the previous one:
+If you want to access the rails console, then run the following command after the previous one:
 
 ```
 rails c
