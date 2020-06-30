@@ -4,8 +4,7 @@ FROM ruby:2.7.0
 RUN apt-get update && apt-get install -y \
   build-essential \
   nodejs \
-  postgresql-client \
-  yarn
+  postgresql-client
 
 # Configure the main working directory
 WORKDIR /usr/src/app
@@ -13,9 +12,15 @@ WORKDIR /usr/src/app
 # Copies the main application to run install dependencies and rake files
 COPY . .
 
+# Yarn installation 
+RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
+RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
+
+RUN apt-get update && apt-get install -y yarn
+RUN yarn install
+
 # Installs gems listed in the Gemfile.lock & Package.json
 RUN bundle install
-RUN yarn install
 
 # Database Setup
 RUN bundle exec rake db:create 
