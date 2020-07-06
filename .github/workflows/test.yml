@@ -29,5 +29,5 @@ jobs:
     - name: Migrate Database
       run: docker exec project-matching_rails_1 bundle exec rake db:migrate
     - name: Run tests
-      run: docker exec project-matching_rails_1 bundle exec rake test -d 
+      run: docker exec project-matching_rails_1 bundle exec rake test
   
