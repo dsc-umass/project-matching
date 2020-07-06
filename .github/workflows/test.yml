@@ -24,8 +24,6 @@ jobs:
       run: docker-compose up -d
     - name: Check running containers
       run: docker ps -a
-    - name: Yarn Check
-      run: docker ecec project-matching_rails_1 yarn install --check-files
     - name: Create database
       run: docker exec project-matching_rails_1 bundle exec rake db:create
     - name: Migrate Database
