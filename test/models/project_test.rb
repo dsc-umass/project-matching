@@ -8,8 +8,8 @@ class ProjectTest < ActiveSupport::TestCase
   end
 
   #validation test
-  describe 'validations' do:
-    it{ is_expeected.to validate_length_of(:title) }
-    it{ is_expeected.to validate_presence_of(:organization_id) }
+  context 'validations' do
+    should validate_length_of(:title)
+    should validate_presence_of(:organization_id)
   end
 end

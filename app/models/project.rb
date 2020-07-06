@@ -3,5 +3,5 @@ class Project < ApplicationRecord
   has_many :positions
   belongs_to :organization
   validates :title, length: { in: 3..20 }
-  validates :organization_id, presence :true
+  validates :organization_id, presence: true
 end

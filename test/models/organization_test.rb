@@ -8,9 +8,9 @@ class OrganizationTest < ActiveSupport::TestCase
   end
   
   #validation test
-  describe 'validations' do:
-    it{ is_expected.to validate_presence_of(:name) }
-    it{ is_expected.to validate_confirmation_of(:email) }
-    it{ is_expected.to validate_presence_of(:confirmation) }
+  context 'validations' do
+    should validate_presence_of(:name)
+    should validate_confirmation_of(:email)
+    should validate_presence_of(:confirmation)
   end
 end
