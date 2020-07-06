@@ -6,6 +6,4 @@ class Organization < ApplicationRecord
     validates :name, presence :true
     validates :email, confirmation { case_sensitive: false }
     validates :confirmation, presence :true
-    validates :created_at, presence :true
-    validates :updated_at, presence :true
 end

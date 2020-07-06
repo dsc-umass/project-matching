@@ -8,5 +8,4 @@ class User < ApplicationRecord
   validates :name, presence :true
   validates :email, confirmation { case_sensitive: false }
   validates :confirmation, presence :true
-  validates :encrypted_password, length { in: 8..20 }
 end
