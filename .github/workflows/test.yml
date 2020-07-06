@@ -21,7 +21,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the containers
-      run: docker-compose up
+      run: docker-compose up -d
     - name: Check running containers
       run: docker ps -a
+    - name: run tests
+      run: docker-compose exex rails rake test
   
