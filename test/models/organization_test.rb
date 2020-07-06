@@ -10,7 +10,6 @@ class OrganizationTest < ActiveSupport::TestCase
   #validation test
   context 'validations' do
     should validate_presence_of(:name)
-    should validate_confirmation_of(:email)
-    should validate_presence_of(:confirmation)
+    should validate_presence_of(:email)
   end
 end
