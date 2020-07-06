@@ -25,7 +25,7 @@ jobs:
     - name: Check running containers
       run: docker ps -a
     - name: Create database
-      run: docker exec project-matching_rails_1 rake db:create -d
+      run: docker exec project-matching_rails_1 rake db:create
     - name: Run tests
       run: docker exec project-matching_rails_1 rake test -d 
   
