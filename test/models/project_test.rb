@@ -7,9 +7,9 @@ class ProjectTest < ActiveSupport::TestCase
     should belong_to(:organization)
   end
 
-  #validation test
   context 'validations' do
-    should validate_length_of(:title)
+    should validate_length_of(:title).
+      is_at_least(3).is_at_most(20)
     should validate_presence_of(:organization_id)
   end
 end
