@@ -13,7 +13,62 @@
 
 Project Matching is an open source project that helps teams/clubs help match their members to projects. The application allows the admin to rank people's skills based on projects and then the team members rank projects, then the application matches people to projects based on the [stable match algorithm](https://en.wikipedia.org/wiki/Stable_marriage_problem). 
 
-## Getting Started
+## Getting Started without Docker
+
+### Prerequisites 
+
+You would need ruby 2.7.0 and rails 6. Installation instructions are [here](https://gorails.com/setup/ubuntu/20.04)
+
+YOu would also need postgres for this application. Installation instructions are [here](https://www.postgresql.org/download/)
+
+### Setting up database connection 
+
+TO setup a database connection from the rails application, you need edit the env.yml file. 
+
+```
+DATABASE_USER: 'YOUR USERNAME'
+DATABASE_PASSWORD: 'YOUR PASSWORD'
+DATABASE_HOST: ''
+```
+
+Leave the database host empty. Use the same username and password that you used to setup postgres.
+
+### Installing dependencies 
+
+Use bundle and yarn to install dependencies.
+
+```
+bundle install
+
+yarn install
+```
+
+### Setting up the database 
+
+Setting up the database is a one time only thing when you first clone the rails application.
+
+```
+cd docker 
+
+bash db_setup.sh
+```
+The bash script creates the database and loads the schema.
+
+### Running the rails server
+
+```
+rails s
+```
+
+### Common Errors & FAQ
+
+If there is a pending migration error, run this command:
+
+```
+rake db:migrate
+```
+
+## Getting Started with Docker
 
 ### Prerequisites
 
