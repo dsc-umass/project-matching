@@ -19,7 +19,7 @@ Project Matching is an open source project that helps teams/clubs help match the
 
 You would need ruby 2.7.0 and rails 6. Installation instructions are [here](https://gorails.com/setup/ubuntu/20.04)
 
-YOu would also need postgres for this application. Installation instructions are [here](https://www.postgresql.org/download/)
+You would also need postgres for this application. Installation instructions are [here](https://www.postgresql.org/download/)
 
 ### Setting up database connection 
 
