@@ -23,7 +23,7 @@ You would also need postgres for this application. Installation instructions are
 
 ### Setting up database connection 
 
-TO setup a database connection from the rails application, you need edit the env.yml file. 
+To setup a database connection from the rails application, you need edit the env.yml file. 
 
 ```
 DATABASE_USER: 'YOUR USERNAME'
