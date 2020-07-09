@@ -6,7 +6,7 @@
 
 
 # env variables 
-
+env.yml
 
 # Ignore bundler config.
 /.bundle
