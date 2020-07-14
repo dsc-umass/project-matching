@@ -4,6 +4,7 @@ class OrganizationTest < ActiveSupport::TestCase
   
   context 'associations' do
     should have_many(:projects)
+    should belong_to(:universities)
     # should have_and_belong_to_many(:users)
   end
   

@@ -7,7 +7,9 @@
 one:
   name: Guy1
   email: guy1@example.com
+  university_id: 1
 
 two:
   name: Guy2
   email: guy2@example.com
+  university_id: 2

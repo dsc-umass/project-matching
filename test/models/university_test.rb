@@ -4,7 +4,6 @@ class UniversityTest < ActiveSupport::TestCase
   context 'associations' do
     should have_many(:users)
     should have_many(:organizations)
-    should have_many(:projects)
   end
 
   context 'validations' do

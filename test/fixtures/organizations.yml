@@ -3,7 +3,9 @@
 one:
   name: MyString
   email: MyString
+  university_id: 1
 
 two:
   name: MyString
   email: MyString
+  university_id: 2
