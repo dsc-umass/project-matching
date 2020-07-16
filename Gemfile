@@ -5,6 +5,7 @@ ruby '2.7.0'
 
 #auth
 gem 'devise'
+gem 'omniauth-github'
 gem 'jquery-turbolinks'
 
 # tags
