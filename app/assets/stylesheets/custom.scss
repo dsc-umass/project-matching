@@ -1,0 +1,169 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* Variables */
+$gray-medium-light: #eaeaea;
+
+/* Universal */
+
+body{
+  padding-top: 60px;
+  background-color: #fff;
+  color: #333;
+}
+
+#profile-page{ 
+    background: image-url("background.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.center {
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: $gray-light;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.6em;
+  color: #fff;
+  text-transform: uppercase;
+  padding-top: 9px;
+  font-weight: bold;
+  &:hover {
+    background-color: none;
+    text-decoration: none;
+  }
+}
+
+header nav ul {
+    font-size: 1.25em;
+    letter-spacing: 0.5px;
+}
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $gray-medium-light;
+  color: $gray-light;
+  a {
+    color: $gray;
+    &:hover {
+      color: $gray-darker;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 15px;
+    }
+  }
+}
+
+#profile-page footer{
+  color: #fff;
+  a {
+    color: #fff;
+    &:hover {
+      color: $gray-darker;
+    }
+  }
+}
+
+/* Custom */
+
+#profile-card{
+  background-color: $gray-dark;
+  width: 64rem;
+  height: 120rem;
+  float: right;
+  margin-top: 1rem;
+  padding: 2rem 5rem 20px 5rem;
+  font-size: 16px;
+  color: orange;
+  border-radius: 15px;
+}
+
+#profile-pic{
+  background-color: #ddd;
+  border-radius: 200px;
+  margin: 0.5rem 0 2rem 0;
+  border: solid white 0.3rem;
+}
+
+#profile-submit-btn{
+  background-color: orange;
+  width: 20rem;
+  height: 3rem;
+  border-radius: 20px;
+  float: right;
+  margin: 2rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  padding: 0;
+}
+
+#resume-upload-btn{
+  background-color: #09f;
+  width: 40rem;
+  height: 3rem;
+  border-radius: 5px;
+  margin: 2rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  padding: 0;
+}
+
+#profile-card .form-control{
+  border: solid orange 2px;
+}
+
+#profile-card h2{
+  color: orange;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 5rem 0 10rem 0;
+}
+
+
+
+.alert-alert {
+  @extend .alert-warning;
+}
+
+.alert-notice {
+  @extend .alert-info;
+}

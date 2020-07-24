@@ -7,4 +7,4 @@ class TypesController < ApplicationController
       @type =  ActsAsTaggableOn::Tag.find(params[:id])
       @organizations = Organization.tagged_with(@type.name)
     end
-  end
+end
