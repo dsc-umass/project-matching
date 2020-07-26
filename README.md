@@ -62,6 +62,25 @@ Then type:
 psql project_matching_development projectmatch projectmatchpass
 ```
 
+### Automatic Testing with Guard
+
+We're using the [guard-minitest gem](https://github.com/guard/guard-minitest) for automatic testing.
+It essentially listens for changes in the specified files and runs minitests.
+
+The `Guardfile` specifies which files `guard` watches and how. To add new files/directories, edit this file.
+
+To use guard, after starting the server with 
+```bash
+rails s
+``` 
+
+run:
+```ruby
+bundle exec guard
+```
+
+This will execute the Guardfile and establish the file watchers.
+
 ### Common Errors & FAQ
 
 In case of a database not found or database not created error:
