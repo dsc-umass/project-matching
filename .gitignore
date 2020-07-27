@@ -44,3 +44,4 @@ db/postgres/
 
 # IDE
 .idea
+.code
