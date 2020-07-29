@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ProjectMatching</title>
+    <%= render 'layouts/rails_default' %>
+  </head>
+  <body id="profile-page">
+    <%= render 'layouts/header' %>
+    <div class="container">
+      <% flash.each do |key, value| %>
+        <div class="alert alert-<%= key %>">
+          <%= value %>
+        </div>
+      <% end %>
+    </div>
+    <div class="container">
+        <div class = "container">
+            <div class = "container" id = "profile-card">
+                <form>
+                  <div class = "form-row text-center">
+                    <div class = "col-12">
+                        <svg class="text-center btn btn-primary" id = "profile-pic" width="8em" height="8em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="gray" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                        </svg>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for = "first-name">First Name</label>
+                      <input type="text" class="form-control">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="last-name">Last Name</label>
+                      <input type="text" class="form-control">
+                    </div>
+                  </div>
+                  <div class="form-group col-md-12">
+                    <label for="institution">Institution</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-md-12">
+                    <label for="headline">Headline</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-md-12">
+                    <label for="bio">Bio</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-md-12">
+                    <label for="github">GitHub</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-md-12">
+                    <label for="linkedin">LinkedIn Profile URL</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div class="form-group col-md-12" style="margin-bottom: 10rem">
+                    <label for="website">Website</label>
+                    <input type="text" class="form-control">
+                  </div>
+                  <div>
+                      <h2>Your best skills</h2>
+                      <h2>Your other skills</h2>
+                  </div>
+                  <div class = "form-row text-center">
+                    <div class = "col-12">
+                      <button type="submit" class="text-center btn btn-primary" id="resume-upload-btn">Click to Upload your Resume</button>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary" id="profile-submit-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+        <%= render 'layouts/footer' %>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
