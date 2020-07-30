@@ -9,3 +9,4 @@ organization_list = [
 organization_list.each do |name, email|
   Organization.create(name: name, email: email)
 end
+
