@@ -9,7 +9,8 @@ gem 'omniauth-github'
 
 # tags
 gem 'acts-as-taggable-on', '~> 6.0'
-
+# Faker for generating fake seed data
+gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
 # Bcrypt for hashing passwords
 gem 'bcrypt', '3.1.13'
 # Bootstrap with sass
