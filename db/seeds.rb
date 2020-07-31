@@ -1,11 +1,4 @@
-organizations_list = [
-    ["UMass ACM", "umass.acm@gmail.com"],
-    ["UMass DSC", "umass.dsc@gmail.com"],
-    ["UIUC DSC", "uiuc.dsc@gmail.com"],
-    ["NTU DSC", "ntu.dsc@gmail.com"],
-    ["Linux Org.", "linux@linux.org"]
-]
-
+require 'faker'
 
 projects_list = [
     ["Crypto Hack", 1],
@@ -28,16 +21,16 @@ positions_list = [
     ["Kernel Engineer", 5, 0, 6]
 ]
 
-organizations_list.each do |name, email|
-  Organization.create(name: name, email: email)
+(1..20).each do
+  Organization.create(name: Faker::University.name, email: Faker::Internet.email)
 end
 
 
-projects_list.each do |title, organization_id|
-  Project.create(title: title, organization_id: organization_id)
+(1..30).each do
+  Project.create(title: Faker::Game.title, organization_id: rand(20))
 end
 
 
-positions_list.each do |title, project_id, user_id, integer|
-  Position.create(title: title, project_id: project_id, user_id: user_id, integer: integer)
+(1..30).each do |x|
+  Position.create(title: Faker::Job.position, project_id: x, user_id: rand(30), integer: rand(10))
 end
