@@ -41,3 +41,7 @@ yarn-debug.log*
 
 # Database
 db/postgres/
+
+# IDE
+.idea
+.code
