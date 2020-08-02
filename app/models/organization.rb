@@ -1,3 +1,5 @@
+require 'csv'
+
 class Organization < ApplicationRecord
     # has_one :admin
     acts_as_taggable_on :types
@@ -11,9 +13,10 @@ class Organization < ApplicationRecord
         CSV.generate(headers: true) do |csv|
             csv << attributes
 
-            all.each do |organization|
+            self.find_each do |organization|
                 csv << attributes.map{ |attr| organization.send(attr) }
             end
         end
     end
+
 end
