@@ -5,6 +5,11 @@ class OrganizationsController < ApplicationController
   # GET /organizations.json
   def index
     @organizations = Organization.all
+
+    respond_to do |format|
+      format.html
+      format.csv { send_data @organizations.to_csv, filename: "organizations-#{Date.today}.csv" }
+    end
   end
 
   # GET /organizations/1
